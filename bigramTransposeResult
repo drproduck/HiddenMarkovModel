@@ -1,0 +1,63 @@
+dim = 2
+SWAPPED, new logProb = -1162.862220, swap pair = 1 2
+SWAPPED, new logProb = -1162.444888, swap pair = 3 4
+SWAPPED, new logProb = -1156.262983, swap pair = 10 11
+SWAPPED, new logProb = -1154.911633, swap pair = 8 9
+SWAPPED, new logProb = -1153.083043, swap pair = 13 14
+SWAPPED, new logProb = -1152.348174, swap pair = 14 15
+SWAPPED, new logProb = -1147.500201, swap pair = 0 2
+SWAPPED, new logProb = -1147.453997, swap pair = 9 15
+SWAPPED, new logProb = -1146.837796, swap pair = 8 9
+SWAPPED, new logProb = -1146.520261, swap pair = 5 7
+SWAPPED, new logProb = -1146.241960, swap pair = 8 13
+SWAPPED, new logProb = -1145.236659, swap pair = 3 5
+SWAPPED, new logProb = -1144.360050, swap pair = 1 3
+SWAPPED, new logProb = -1143.865872, swap pair = 3 5
+SWAPPED, new logProb = -1143.389606, swap pair = 0 16
+SWAPPED, new logProb = -1141.126583, swap pair = 1 3
+SWAPPED, new logProb = -1140.534789, swap pair = 4 15
+[16, 4, 0, 7, 8, 2, 6, 5, 14, 9, 11, 10, 12, 13, 15, 3, 1]
+[10, 3, 14, 8, 12, 7, 9, 11, 2, 13, 4, 0, 16, 5, 6, 15, 1]
+
+dim = 3
+SWAPPED, new logProb = -1137.900891, swap pair = 0 1
+SWAPPED, new logProb = -1137.702916, swap pair = 3 4
+SWAPPED, new logProb = -1137.013626, swap pair = 0 1
+SWAPPED, new logProb = -1136.138397, swap pair = 1 3
+SWAPPED, new logProb = -1135.863904, swap pair = 14 15
+SWAPPED, new logProb = -1133.040831, swap pair = 4 5
+SWAPPED, new logProb = -1129.619426, swap pair = 1 5
+SWAPPED, new logProb = -1128.972896, swap pair = 3 4
+SWAPPED, new logProb = -1128.582718, swap pair = 12 15
+[0, 3, 2, 5, 1, 4, 6, 7, 8, 9, 10, 11, 14, 13, 15, 12, 16]
+[11, 4, 8, 3, 15, 12, 9, 10, 5, 13, 1, 2, 6, 7, 14, 0, 16]
+
+dim = 3, restarts = 100
+SWAPPED, new logProb = -1137.900918, swap pair = 0 1
+SWAPPED, new logProb = -1137.500443, swap pair = 3 4
+SWAPPED, new logProb = -1137.016958, swap pair = 0 1
+SWAPPED, new logProb = -1136.137911, swap pair = 1 3
+SWAPPED, new logProb = -1135.863916, swap pair = 14 15
+SWAPPED, new logProb = -1135.564218, swap pair = 0 1
+SWAPPED, new logProb = -1133.092481, swap pair = 1 2
+SWAPPED, new logProb = -1130.894838, swap pair = 0 1
+SWAPPED, new logProb = -1128.200572, swap pair = 2 5
+SWAPPED, new logProb = -1127.237751, swap pair = 2 4
+SWAPPED, new logProb = -1126.949986, swap pair = 5 6
+SWAPPED, new logProb = -1126.262891, swap pair = 9 12
+SWAPPED, new logProb = -1126.197557, swap pair = 2 3
+[2, 4, 1, 3, 5, 6, 0, 7, 8, 12, 10, 11, 9, 13, 15, 14, 16]
+[8, 12, 15, 4, 3, 9, 11, 10, 5, 0, 1, 2, 13, 7, 14, 6, 16]
+
+dim = 4
+SWAPPED, new logProb = -1125.335996, swap pair = 1 2
+SWAPPED, new logProb = -1123.566091, swap pair = 4 5
+SWAPPED, new logProb = -1123.064765, swap pair = 7 8
+SWAPPED, new logProb = -1121.872531, swap pair = 13 14
+SWAPPED, new logProb = -1119.543911, swap pair = 10 11
+SWAPPED, new logProb = -1119.154975, swap pair = 5 8
+SWAPPED, new logProb = -1117.726430, swap pair = 0 1
+SWAPPED, new logProb = -1115.867179, swap pair = 1 4
+SWAPPED, new logProb = -1114.114710, swap pair = 3 15
+[2, 5, 1, 15, 0, 7, 6, 8, 4, 9, 11, 10, 12, 14, 13, 3, 16]
+[8, 3, 15, 14, 11, 10, 9, 5, 12, 13, 2, 1, 0, 6, 7, 4, 16]
