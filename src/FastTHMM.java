@@ -1,7 +1,5 @@
 import org.apache.commons.math3.util.FastMath;
 
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.util.Random;
 
 /**

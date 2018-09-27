@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5eb497cf-9e42-43a2-96ed-c8fac27a84cb" name="Default" comment="" />
+    <list default="true" id="5eb497cf-9e42-43a2-96ed-c8fac27a84cb" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/FastTHMM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/FastTHMM.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler$Pair.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/thmm.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/trigramtest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/trigramtest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FastTHMM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastTHMM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HMMBlockSampler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HMMBlockSampler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trigramtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trigramtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -50,45 +62,76 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="1069934610">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="12692" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="12692" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="8" />
+          <entry key="simple_cipher_length=500" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="8" />
+          <entry key="PLAIN_TEXT" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/hmmWithSpacedCharacter/utilSpace.java">
+        <entry file="file://$PROJECT_DIR$/simple_cipher/simple_cipher_length=500">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/HMMBlockSampler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
+            <state relative-caret-position="264">
+              <caret line="336" selection-start-line="336" selection-end-line="336" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <marker date="1537961441399" expanded="true" signature="11571:12017" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/HMMBlockSampler.java">
+        <entry file="file://$PROJECT_DIR$/src/QuadHMM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3065">
-              <caret line="156" column="63" selection-start-line="156" selection-start-column="63" selection-end-line="156" selection-end-column="63" />
+            <state relative-caret-position="540">
+              <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3997#3998#0" expanded="true" />
-                <element signature="e#4015#4016#0" expanded="true" />
-                <marker date="1537783912974" expanded="true" signature="10829:11275" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Counters.java">
+        <entry file="file://$PROJECT_DIR$/src/FastTHMM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+            <state relative-caret-position="-3601">
+              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#755#756#0" expanded="true" />
-                <element signature="e#799#800#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,6 +153,9 @@
       <find>log</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="GradleLocalSettings">
     <option name="externalProjectsViewState">
       <projects_view />
@@ -118,7 +164,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Viterbi.java" />
         <option value="$PROJECT_DIR$/src/MakeCipher.java" />
         <option value="$PROJECT_DIR$/bfgs_proposals/proposals/_beta=1_iter=200_seed=4686483" />
         <option value="$PROJECT_DIR$/src/MathUtils.java" />
@@ -155,12 +200,8 @@
         <option value="$PROJECT_DIR$/B_1236" />
         <option value="$PROJECT_DIR$/src/TriHMM.java" />
         <option value="$PROJECT_DIR$/fastTHMMNewResult" />
-        <option value="$PROJECT_DIR$/src/SpeedTest.java" />
-        <option value="$PROJECT_DIR$/src/trigramtest.java" />
-        <option value="$PROJECT_DIR$/src/util.java" />
         <option value="$PROJECT_DIR$/src/utilNoSpace.java" />
         <option value="$PROJECT_DIR$/src/hmmWithSpacedCharacter/utilNoSpace.java" />
-        <option value="$PROJECT_DIR$/src/FastTHMM.java" />
         <option value="$PROJECT_DIR$/src/hmmWithSpacedCharacter/THMM.java" />
         <option value="$PROJECT_DIR$/src/hmmWithSpacedCharacter/utilSpace.java" />
         <option value="$PROJECT_DIR$/src/hmmWithSpacedCharacter/SpaceTHMM.java" />
@@ -168,7 +209,12 @@
         <option value="$PROJECT_DIR$/src/Counters.java" />
         <option value="$PROJECT_DIR$/src/CategoricalDistribution.java" />
         <option value="$PROJECT_DIR$/src/DirichletDistribution.java" />
+        <option value="$PROJECT_DIR$/src/util.java" />
         <option value="$PROJECT_DIR$/src/HMMBlockSampler.java" />
+        <option value="$PROJECT_DIR$/src/FastTHMM.java" />
+        <option value="$PROJECT_DIR$/src/trigramtest.java" />
+        <option value="$PROJECT_DIR$/src/SpeedTest.java" />
+        <option value="$PROJECT_DIR$/src/QuadHMM.java" />
       </list>
     </option>
   </component>
@@ -184,7 +230,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-1" />
     <option name="width" value="684" />
     <option name="height" value="768" />
@@ -195,70 +241,59 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="HMM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HMM" type="462c0819:PsiDirectoryNode" />
+              <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HMM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HMM" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HMM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HMM" type="462c0819:PsiDirectoryNode" />
+              <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
               <item name="simple_cipher" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HMM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HMM" type="462c0819:PsiDirectoryNode" />
+              <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="HMM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HMM" type="462c0819:PsiDirectoryNode" />
+              <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="hmmWithSpacedCharacter" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="HMM" type="b2602c69:ProjectViewProjectNode" />
-              <item name="HMM" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="thmm" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/thmm" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.excludes" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/thmm" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/simple_cipher" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/data" />
       <recent name="$PROJECT_DIR$/src" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/thmm" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/simple_cipher" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -273,7 +308,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.HMMBlockSampler">
+  <component name="RunManager">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -574,16 +609,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FastTHMM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="FastTHMM" />
+    <configuration name="HMMBlockSampler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HMMBlockSampler" />
       <module name="HMM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HMMBlockSampler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HMMBlockSampler" />
+    <configuration name="QuadHMM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="QuadHMM" />
       <module name="HMM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -649,16 +684,16 @@
     <list>
       <item itemvalue="Application.utilSpace" />
       <item itemvalue="Application.SpaceTHMM" />
-      <item itemvalue="Application.FastTHMM" />
+      <item itemvalue="Application.QuadHMM" />
       <item itemvalue="Application.CategoricalDistribution" />
       <item itemvalue="Application.HMMBlockSampler" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.QuadHMM" />
         <item itemvalue="Application.HMMBlockSampler" />
         <item itemvalue="Application.CategoricalDistribution" />
         <item itemvalue="Application.SpaceTHMM" />
-        <item itemvalue="Application.FastTHMM" />
         <item itemvalue="Application.utilSpace" />
       </list>
     </recent_temporary>
@@ -670,8 +705,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="0" width="1368" height="768" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.275" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27424243" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -684,7 +720,7 @@
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.32662538" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.3255814" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32929516" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32929516" />
@@ -697,7 +733,7 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.2497332" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.19903949" />
       <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Run" order="9" weight="0.26666668" />
+      <window_info active="true" anchor="right" id="Run" order="9" visible="true" weight="0.19772728" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20117396" />
@@ -761,8 +797,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trihmm_simple=300_smoothed" />
-    <entry file="file://$PROJECT_DIR$/data/triA2" />
     <entry file="file://$PROJECT_DIR$/trigram_simple_408" />
     <entry file="file://$PROJECT_DIR$/src/MDir.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -803,24 +837,9 @@
     <entry file="file://$PROJECT_DIR$/data/trigram.txt" />
     <entry file="jar://$USER_HOME$/Software/commons-math3-3.6.1/commons-math3-3.6.1.jar!/org/apache/commons/math3/util/FastMath.class" />
     <entry file="file://$PROJECT_DIR$/src/Decode.java" />
-    <entry file="file://$PROJECT_DIR$/src/HMM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="73" lean-forward="true" selection-start-line="73" selection-end-line="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/B_1236" />
-    <entry file="file://$PROJECT_DIR$/src/TriHMM.java" />
     <entry file="file://$PROJECT_DIR$/fastTHMMNewResult" />
     <entry file="file://$PROJECT_DIR$/data/408plaincleaned" />
-    <entry file="file://$PROJECT_DIR$/src/SpeedTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/simple_cipher/simple_408">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -843,23 +862,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/data/408ciphercleaned">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="487">
-          <caret line="46" column="15" selection-start-line="46" selection-start-column="15" selection-end-line="46" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/trigramtest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1800">
-          <caret line="120" selection-start-line="120" selection-end-line="120" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/brown_nolines.txt">
       <provider selected="true" editor-type-id="text-editor">
@@ -886,11 +888,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
           <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#347#348#0" expanded="true" />
-            <element signature="e#381#382#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -898,20 +895,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#279#280#0" expanded="true" />
-            <element signature="e#308#309#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/hmmWithSpacedCharacter/SpaceTHMM.java">
+    <entry file="file://$PROJECT_DIR$/src/Counters.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="24" column="14" selection-start-line="24" selection-start-column="14" selection-end-line="24" selection-end-column="14" />
+        <state relative-caret-position="450">
+          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#755#756#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,37 +920,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FastTHMM.java">
+    <entry file="file://$PROJECT_DIR$/src/util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="72" column="38" selection-start-line="72" selection-start-column="38" selection-end-line="72" selection-end-column="38" />
+        <state relative-caret-position="504">
+          <caret line="348" column="18" selection-start-line="348" selection-start-column="18" selection-end-line="348" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hmmWithSpacedCharacter/SpaceTHMM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="336" selection-start-line="336" selection-end-line="336" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Counters.java">
+    <entry file="file://$PROJECT_DIR$/simple_cipher/simple_cipher_length=500">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TriHMM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
+        <state relative-caret-position="135">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/HMM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1035">
+          <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="186" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/trigramtest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="132" column="31" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SpeedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/FastTHMM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3601">
+          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/HMMBlockSampler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3065">
-          <caret line="156" column="63" selection-start-line="156" selection-start-column="63" selection-end-line="156" selection-end-column="63" />
+        <state relative-caret-position="264">
+          <caret line="336" selection-start-line="336" selection-end-line="336" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3997#3998#0" expanded="true" />
-            <element signature="e#4015#4016#0" expanded="true" />
-            <marker date="1537783912974" expanded="true" signature="10829:11275" ph="..." />
+            <marker date="1537961441399" expanded="true" signature="11571:12017" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QuadHMM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>

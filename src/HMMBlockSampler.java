@@ -2,6 +2,8 @@ import org.apache.commons.math3.random.MersenneTwister;
 import org.apache.commons.math3.random.RandomGenerator;
 import org.apache.commons.math3.util.FastMath;
 
+import java.io.BufferedReader;
+import java.io.FileReader;
 import java.util.*;
 
 /**
@@ -43,8 +45,9 @@ public class HMMBlockSampler {
 
         cd = new CategoricalDistribution(rng);
         double[] prior = new double[nw];
-        Arrays.fill(prior, 1.0 / nw);
-        assert(prior[0] == 1.0 / nw);
+//        Arrays.fill(prior, 1.0 / nw);
+//        assert(prior[0] == 1.0 / nw);
+        Arrays.fill(prior, 0.1);
         dirichet = new DirichletDistribution(rng, prior);
 
        empiricalCounts = new Counters[nt];
@@ -52,6 +55,7 @@ public class HMMBlockSampler {
     }
 
     /*
+    Main procedure
     Step 1:
     Compute p(x_t = q, x_{t+1} = r, x_{x+2} = s | O_0^{t+2})
     = p(x_t = q, x_{t+1} = r, x_{x+2} = s, O_{t+2} | O_0^{t+1}) / p(O_{t+2} | O_0^{t+1})
@@ -102,6 +106,9 @@ public class HMMBlockSampler {
         }
     }
 
+    /*
+    Main procedure
+     */
     public int[] backwardSampling() {
         int[] sample = new int[len];
         Pair<Integer, Integer> idx = flattenMatrixSampleIndex(alpha[len-2], cd);
@@ -140,6 +147,7 @@ public class HMMBlockSampler {
             parameterSampling(firstSample);
         } else {
             firstSample = firstSample();
+            parameterSampling(firstSample);
         }
         logProb = new double[nIter];
         long start;
@@ -154,7 +162,7 @@ public class HMMBlockSampler {
             stop = System.nanoTime();
             if (verbose) {
                 System.out.println(logProb[it]);
-                System.out.println(Arrays.toString(hiddenSample));
+                System.out.println(Arrays.toString(util.toCharacterSequence(hiddenSample)));
                 System.out.printf("time: %f\n", (stop - start) / 1e9);
             }
         }
@@ -320,17 +328,31 @@ public class HMMBlockSampler {
     }
 
     public static void main(String[] args) throws Exception {
-        int[] pt = util.plain("data/408plaincleaned");
-        int[] ct = util.read408("data/408ciphercleaned");
+//        int[] pt = util.plain("data/408plaincleaned");
+//        int[] ct = util.read408("data/408ciphercleaned");
+//        int nTag = 26;
+//        int nWord = 54;
+//        int len = 408;
+//        int[] pt = util.plain("data/408plaincleaned");
         int nTag = 26;
-        int nWord = 54;
-        int len = 408;
+        int nWord = 26;
+        int T = 500;
 
+        String cipherDir = "simple_cipher/simple_cipher_length=500";
+        Scanner reader = new Scanner(new BufferedReader(new FileReader(cipherDir)));
+        int[] pt = new int[T];
+        for (int i = 0; i < T; i++) {
+            pt[i] = reader.nextInt();
+        }
+        int[] ct = new int[T];
+        for (int i = 0; i < T; i++) {
+            ct[i] = reader.nextInt();
+        }
         double[][][] trigram = util.readTrigram("data/trigram.txt");
         long start = System.nanoTime();
         HMMBlockSampler sampler = new HMMBlockSampler(trigram, nTag, nWord, ct);
         long stop = System.nanoTime();
-        sampler.gibbsSampling(200, false, null, -3076155353333121539L, true);
+        sampler.gibbsSampling(2000, false, null, -3076155353333121539L, true);
 //        FHMM.train(200, false, 8781939572407739913L, true);
 //        FHMM.train(200, false, 1209845257843231593L, true);
 //        FHMM.train(200, false, 3738420990656387694L, true);

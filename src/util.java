@@ -340,4 +340,12 @@ public class util {
         }
         return ret;
     }
+
+    public static char[] toCharacterSequence(int[] seq){
+        char[] res = new char[seq.length];
+        for (int i = 0; i < seq.length; i++) {
+            res[i] = (char) (seq[i] + 65);
+        }
+        return res;
+    }
 }
