@@ -1,28 +1,26 @@
+package em;
+
 import org.apache.commons.math3.util.FastMath;
+
+import java.util.Random;
+import java.util.stream.DoubleStream;
+
 import util.Helper;
 
-import java.io.BufferedReader;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.InputStreamReader;
-import java.util.Arrays;
-import java.util.Random;
-import java.util.Scanner;
-
 /**
- * Trigram em.HMM. a similar normalization is used instead of log-scale and the ensuing logSumExp.
+ * Trigram em.HMM. This version completely avoids log-sum-exp for faster computation but can suffer from underflow
+ * This is the STABLE version
  */
 
-public class QuadHMM {
+public class FastTHMM {
 
-    double[][][][] A;
-    double[][] B;
+    public double[][][] A;
+    public double[][] B;
     int len;
     int nt;
     int nw;
-    double[][][][] ap, bt;
+    double[][][] ap, bt;
     double[] c;
-
     double[][][] digamma;
     double[][][][] trigamma;
     double[][] gamma;
@@ -32,16 +30,16 @@ public class QuadHMM {
     boolean firstRestart;
     static double eps = 0.1; // smoothing constant
 
-    public QuadHMM(double[][][][] transition, int nTag, int nWord, int[] sequence) {
+    public FastTHMM(double[][][] transition, int nTag, int nWord, int[] sequence) {
         len = sequence.length;
         nt = nTag;
         nw = nWord;
         A = transition;
         B = new double[nt][nw];
-        ap = new double[len - 1][nt][nt][nt];
-        bt = new double[len - 1][nt][nt][nt];
+        ap = new double[len - 1][nt][nt];
+        bt = new double[len - 1][nt][nt];
         c = new double[len - 1];
-
+        digamma = new double[len][nt][nt];
         trigamma = new double[len][nt][nt][nt];
         gamma = new double[len][nt];
         seq = sequence;
@@ -49,49 +47,35 @@ public class QuadHMM {
         firstRestart = true;
     }
 
-    /*
-    p(x_t, x_{t+1}, x_{t+2} | O_0^{t+2})
-    c[0] = p(O_0, O_1, O_2)
-    c[t] = p(O_{t+2} | O_0^{t+1})
-    t = 0 -> T - 1 - 2
-     */
     public void alpha() {
         c[0] = 0;
         for (int i = 0; i < nt; i++) {
             for (int j = 0; j < nt; j++) {
-                for (int k = 0; k < nt; k++) {
-                    ap[0][i][j][k] = B[i][seq[0]] * B[j][seq[1]] * B[k][seq[2]];
-                    c[0] += ap[0][i][j][k];
-                }
+                ap[0][i][j] = B[i][seq[0]] * B[j][seq[1]];
+                c[0] += ap[0][i][j];
             }
         }
         c[0] = 1 / c[0];
         for (int i = 0; i < nt; i++) {
             for (int j = 0; j < nt; j++) {
-                for (int k = 0; k < nt; k++) {
-                    ap[0][i][j][k] *= c[0];
-                }
+                ap[0][i][j] *= c[0];
             }
         }
-        for (int t = 1; t < len - 2; t++) {
+        for (int t = 1; t < len - 1; t++) {
             c[t] = 0;
-            for (int j = 0; j < nt; j++) {
-                for (int k = 0; k < nt; k++) {
-                    for (int l = 0; l < nt; l++) {
-                        ap[t][j][k][l] = 0;
-                        for (int i = 0; i < nt; i++) {
-                            ap[t][j][k][l] += ap[t - 1][i][j][k] * A[i][j][k][l] * B[l][seq[t + 2]];
-                        }
-                        c[t] += ap[t][j][k][l];
+            for (int i = 0; i < nt; i++) {
+                for (int j = 0; j < nt; j++) {
+                    ap[t][i][j] = 0;
+                    for (int k = 0; k < nt; k++) {
+                        ap[t][i][j] += ap[t - 1][k][i] * A[k][i][j] * B[j][seq[t + 1]];
                     }
+                    c[t] += ap[t][i][j];
                 }
             }
             c[t] = 1 / c[t];
             for (int i = 0; i < nt; i++) {
                 for (int j = 0; j < nt; j++) {
-                    for (int k = 0; k < nt; k++) {
-                        ap[t][i][j][k] *= c[t];
-                    }
+                    ap[t][i][j] *= c[t]; // p(O0,O1,x0,x1) / p(O0,O1) = p(x0,x1|O0,O1)
                 }
             }
         }
@@ -99,97 +83,63 @@ public class QuadHMM {
 
     public double logProbFromAlpha() {
         logProb = 0;
-        for (int i = 0; i < len - 2; i++) {
+        for (int i = 0; i < len - 1; i++) {
             logProb -= FastMath.log(c[i]);
         }
         return logProb;
     }
 
-
-    /*
-
-    bigram: recursion on p(O_t^n|x_{t-1})
-    p(O^n|x_{n-1}) = \sum_{x_n} p(O_n|x_n) p(x_n|x_{n-1})
-    p(O_t^n|x_{t-1}) = \sum_{x_t} p(O_t, O_{t+1}^n, x_t|x_{t-1}) = \sum_{x_t} p(O_t|x_t) p(O_{t+1}^n|x_t) p(x_t|x_{t-1})
-
-    p(O_t^n|x_{t-1}) / p(O_t|O_0^{t-1})
-
-    quadgram: recursion on p(O_t^n|x_{t-1},x_{t-2},x_{t-3})
-    p(O_t^n|x_{t-1},x_{t-2},x_{t-3}) = \sum_{x_t} p(O^t|x_t) p(O_{t+1}^n|x_t,x_{t-1},x_{t-2}) p(x_t|x_{t-1},x_{t-2},x_{t-3})
-     */
-
-    /*
-    p(x_t, x_{t+1}, x_{t+2} | O_0^{t+2}) * p(O_{t+3}^n | x_t, x_{t+1}, x_{t+2}) = p(O_{t+3}^n, x_t, x_{t+1}, x_{t+2} | O_0^{t+2})
-    need to divide by p(O_{t+3}^n | O_0^{t+2}) = p(O_{t+3}|O_0^{t+2}) * p(O_{t+4}|O_0^{t+3}) * ... * p(O_n|O_0^{n-1})
-     */
-
     public void beta() {
         for (int i = 0; i < nt; i++) {
             for (int j = 0; j < nt; j++) {
-                for (int k = 0; k < nt; k++) {
-                    bt[len - 3][i][j][k] = 1; // p(O_n,O_{n-1}|O_0^{n-2})
-                }
+                bt[len - 2][i][j] = 1;
             }
         }
-        for (int t = len - 4; t >= 0; t--) {
+        for (int t = len - 3; t >= 0; t--) {
             for (int i = 0; i < nt; i++) {
                 for (int j = 0; j < nt; j++) {
+                    bt[t][i][j] = 0;
                     for (int k = 0; k < nt; k++) {
-                        bt[t][i][j][k] = 0;
-                        for (int l = 0; l < nt; l++) {
-                            bt[t][i][j][k] += bt[t + 1][j][k][l] * A[i][j][k][l] * B[l][seq[t + 3]];
-                        }
-                        bt[t][i][j][k] *= c[t+1];
+                        bt[t][i][j] += bt[t + 1][j][k] * A[i][j][k] * B[k][seq[t + 2]];
                     }
+                    bt[t][i][j] *= c[t + 1]; // p(O2|x0,x1) / p(O2|O0,O1)
                 }
             }
         }
     }
 
-    /*
-    p(x_t,x_{t+1},x_{t+2}|O)
-     */
-    public void marginalTrigram(){
+    public void digamma() {
+        for (int t = 0; t < len - 1; t++) {
+            for (int i = 0; i < nt; i++) {
+                gamma[t][i] = 0;
+                for (int j = 0; j < nt; j++) {
+                    digamma[t][i][j] = ap[t][i][j] * bt[t][i][j]; // p(O0,01,O2,x0,x1) / p(O0,O1,O2) = p(x0,x1|O)
+                    gamma[t][i] += digamma[t][i][j]; // p(x0|O) = \sum_{x1} p(x0,x1|O)
+                }
+            }
+        }
+        for (int j = 0; j < nt; j++) {
+            gamma[len - 1][j] = 0;
+            for (int i = 0; i < nt; i++) {
+                gamma[len - 1][j] += digamma[len - 2][i][j]; // p(x2|O) = \sum_{x1} p(x1,x2|O)
+            }
+        }
+    }
+
+    public void trigamma() {
         for (int t = 0; t < len - 2; t++) {
             for (int i = 0; i < nt; i++) {
                 for (int j = 0; j < nt; j++) {
                     for (int k = 0; k < nt; k++) {
-                        trigamma[t][i][j][k] = ap[t][i][j][k] * bt[t][i][j][k];
+                        trigamma[t][i][j][k] = ap[t][i][j] * A[i][j][k] * B[k][seq[t + 2]] * bt[t + 1][j][k] * c[t + 1];
+                        // (p(O0,O1,x0,x1)/p(O0,O1)) * p(x2|x0,x1) * p(O2|x2) * (p(O3|x1,x2)/p(O3|O1,O2)) / p(O2|O0,O1)
                     }
                 }
             }
         }
     }
 
-    public void marginalUnigram(){
-        for (int t = 0; t < len; t++) {
-            for (int i = 0; i < nt; i++) {
-                gamma[t][i] = 0;
-            }
-        }
-        for (int i = 0; i < nt; i++) {
-            for (int j = 0; j < nt; j++) {
-                for (int k = 0; k < nt; k++) {
-                    gamma[0][i] += trigamma[0][i][j][k];
-                    gamma[1][j] += trigamma[0][i][j][k];
-                    gamma[2][k] += trigamma[0][i][j][k];
-                }
-            }
-        }
-        for (int t = 1; t < len - 2; t++) {
-            for (int i = 0; i < nt; i++) {
-                for (int j = 0; j < nt; j++) {
-                    for (int k = 0; k < nt; k++) {
-                        gamma[t+2][k] += trigamma[t][i][j][k];
-                    }
-                }
-            }
-        }
-    }
-
-
-
-    public void reEstimate() {
+    public void reEstimate(boolean trainA) {
         if (firstRestart) {
             alpha();
             logProbFromAlpha();
@@ -197,6 +147,25 @@ public class QuadHMM {
             firstRestart = false;
         }
         beta();
+        digamma();
+        if (trainA) {
+            trigamma();
+            for (int i = 0; i < nt; i++) {
+                for (int j = 0; j < nt; j++) {
+                    double denom = 0;
+                    for (int k = 0; k < nt; k++) {
+                        A[i][j][k] = 0;
+                        for (int t = 0; t < len - 2; t++) {
+                            A[i][j][k] += trigamma[t][i][j][k];
+                        }
+                        denom += A[i][j][k];
+                    }
+                    for (int k = 0; k < nt; k++) {
+                        A[i][j][k] /= denom;
+                    }
+                }
+            }
+        }
         for (int i = 0; i < nt; i++) {
             for (int j = 0; j < nw; j++) {
                 double denom = eps * nw;
@@ -215,14 +184,14 @@ public class QuadHMM {
         logProbFromAlpha();
     }
 
-    public void train(int iter, long seed, boolean verbose) {
-        init(seed);
+    public void train(int iter, boolean trainA, long seed, boolean verbose) {
+        init(seed, trainA);
         long start;
         long stop;
         for (int it = 0; it < iter; it++) {
             if (verbose) System.out.printf("iteration: %d\n", it);
             start = System.nanoTime();
-            reEstimate();
+            reEstimate(trainA);
             stop = System.nanoTime();
             if (verbose) {
                 System.out.println(logProb);
@@ -235,7 +204,7 @@ public class QuadHMM {
         }
     }
 
-    public void init(long seed) {
+    public void init(long seed, boolean initA) {
         Random rng = new Random(seed);
         double s;
         for (int i = 0; i < nt; i++) {
@@ -248,52 +217,63 @@ public class QuadHMM {
                 B[i][j] /= s;
             }
         }
+        if (initA) {
+            A = new double[nt][nt][nt];
+            for (int i = 0; i < nt; i++) {
+                for (int j = 0; j < nt; j++) {
+                    s = 0;
+                    for (int k = 0; k < nt; k++) {
+                        A[i][j][k] = rng.nextDouble();
+                        s += A[i][j][k];
+
+                    }
+                    for (int k = 0; k < nt; k++) {
+                        A[i][j][k] /= s;
+                    }
+                }
+            }
+        }
     }
 
     public int[] viterbi() {
         double c = 0;
 
-        int[][][][] dp = new int[len - 1][nt][nt][nt];
-        double[][][] head = new double[nt][nt][nt];
-        double[][][] temp = new double[nt][nt][nt];
+        int[][][] dp = new int[len - 1][nt][nt];
+        double[][] head = new double[nt][nt];
+        double[][] temp = new double[nt][nt];
 
+        // i -> j
         for (int i = 0; i < nt; i++) {
             for (int j = 0; j < nt; j++) {
-                for (int k = 0; k < nt; k++) {
-                    head[i][j][k] = ap[0][i][j][k];
-                }
+                head[i][j] = ap[0][i][j];
             }
         }
 
-        for (int t = 0; t < len - 3; t++) {
+        for (int t = 0; t < len - 2; t++) {
             c = 0;
-            // i -> (j -> k -> l), fix j, k and l, search over i
-            for (int j = 0; j < nt; j++) {
-                for (int k = 0; k < nt; k++) {
-                    for (int l = 0; l < nt; l++) {
-                        double x = 0;
-                        double max = Double.NEGATIVE_INFINITY;
-                        int argmax = -1;
-                        for (int i = 0; i < nt; i++) {
-                            x = head[i][j][k] * A[i][j][k][l];
-                            if (x > max) {
-                                max = x;
-                                argmax = i;
-                            }
+            // i -> (j -> k), fix j and k, search over i
+            for (int k = 0; k < nt; k++) {
+                for (int j = 0; j < nt; j++) {
+                    double x = 0;
+                    double max = Double.NEGATIVE_INFINITY;
+                    int argmax = -1;
+                    for (int i = 0; i < nt; i++) {
+                        x = head[i][j] * A[i][j][k];
+                        if (x > max) {
+                            max = x;
+                            argmax = i;
                         }
-                        dp[t][j][k][l] = argmax;
-                        temp[j][k][l] = max * Math.pow(B[l][seq[t + 3]], 3);
-                        c += temp[j][k][l];
                     }
+                    dp[t][j][k] = argmax;
+                    temp[j][k] = max * Math.pow(B[k][seq[t + 2]], 3);
+                    c += temp[j][k];
                 }
             }
             //scale and move back to head
             c = 1 / c;
             for (int i = 0; i < nt; i++) {
                 for (int j = 0; j < nt; j++) {
-                    for (int k = 0; k < nt; k++) {
-                        head[i][j][k] = c * temp[i][j][k];
-                    }
+                    head[i][j] = c * temp[i][j];
                 }
             }
         }
@@ -301,31 +281,23 @@ public class QuadHMM {
         //get the last state of the best DP sequence
         int argmaxi = -1;
         int argmaxj = -1;
-        int argmaxk = -1;
         double max = Double.NEGATIVE_INFINITY;
         for (int i = 0; i < nt; i++) {
             for (int j = 0; j < nt; j++) {
-                for (int k = 0; k < nt; k++) {
-                    if (head[i][j][k] > max) {
-                        max = head[i][j][k];
-                        argmaxi = i;
-                        argmaxj = j;
-                        argmaxk = k;
-                    }
+                if (head[i][j] > max) {
+                    max = head[i][j];
+                    argmaxi = i;
+                    argmaxj = j;
                 }
             }
         }
         //trace back
         int[] resn = new int[len];
-        resn[len - 3] = argmaxi;
-        resn[len - 2] = argmaxj;
-        resn[len - 1] = argmaxk;
-
-        for (int t = len - 4; t >= 0; t--) {
-            argmaxi = dp[t][argmaxi][argmaxj][argmaxk];
+        resn[len - 2] = argmaxi;
+        resn[len - 1] = argmaxj;
+        for (int t = len - 3; t >= 0; t--) {
+            argmaxi = dp[t][argmaxi][argmaxj];
             argmaxj = argmaxi;
-            argmaxk = argmaxj;
-
             resn[t] = argmaxi;
         }
         char[] resc = new char[len];
@@ -336,31 +308,18 @@ public class QuadHMM {
     }
 
     public static void main(String[] args) throws Exception {
-//        int[] pt = util.Helper.plain("data/408plaincleaned");
-//        int[] ct = util.Helper.read408("data/408ciphercleaned");
-//        int nTag = 26;
-//        int nWord = 54;
-//        int T = 408;
-
+        int[] pt = Helper.plain("data/408plaincleaned");
+        int[] ct = Helper.read408("data/408ciphercleaned");
         int nTag = 26;
-        int nWord = 26;
-        int T = 500;
+        int nWord = 54;
+        int len = 408;
 
-        String cipherDir = "simple_cipher/simple_cipher_length=500";
-        Scanner reader = new Scanner(new BufferedReader(new FileReader(cipherDir)));
-        int[] pt = new int[T];
-        for (int i = 0; i < T; i++) {
-            pt[i] = reader.nextInt();
-        }
-        int[] ct = new int[T];
-        for (int i = 0; i < T; i++) {
-            ct[i] = reader.nextInt();
-        }
-        double[][][][] quadgram = Helper.readQuadgram("data/quadgram");
+        double[][][] trigram = Helper.readTrigram("data/trigram");
         long start = System.nanoTime();
-        QuadHMM FHMM = new QuadHMM(quadgram, nTag, nWord, ct);
+        FastTHMM FHMM = new FastTHMM(trigram, nTag, nWord, ct);
         long stop = System.nanoTime();
-        FHMM.train(5,-3076155353333121539L, true);
+        FHMM.train(200, false, -3076155353333121539L, true);
+        System.out.println(DoubleStream.of(FHMM.gamma[5]).summaryStatistics());
 //        FHMM.train(200, false, 8781939572407739913L, true);
 //        FHMM.train(200, false, 1209845257843231593L, true);
 //        FHMM.train(200, false, 3738420990656387694L, true);
@@ -378,7 +337,7 @@ public class QuadHMM {
                 acc += 1;
             }
         }
-        System.out.printf("accuracy = %f\n", acc / T);
+        System.out.printf("accuracy = %f\n", acc / len);
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < sol.length; i++) {
             sb.append(Character.toString((char) (sol[i] + 65)));
@@ -420,5 +379,4 @@ public class QuadHMM {
 //                acc /= T;
 //        System.out.println(acc);
     }
-
 }

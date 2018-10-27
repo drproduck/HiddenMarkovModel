@@ -2,17 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5eb497cf-9e42-43a2-96ed-c8fac27a84cb" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/em/ExpectationEstimator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HMM/FastTHMM.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/FastTHMM.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler$Pair.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler$Pair.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HMM/thmm.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HMM/trigramtest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/trigramtest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/HMM/util.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/HMM/util.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FastTHMM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FastTHMM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/HMMBlockSampler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/HMMBlockSampler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/trigramtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/trigramtest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/408.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/homophonic_408" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/B_1236" beforeDir="false" afterPath="$PROJECT_DIR$/stash/B_1236" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/HMM.iml" beforeDir="false" afterPath="$PROJECT_DIR$/HMM.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Z408.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/Z408.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biA2_restarts" beforeDir="false" afterPath="$PROJECT_DIR$/stash/biA2_restarts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biA3_restarts" beforeDir="false" afterPath="$PROJECT_DIR$/stash/biA3_restarts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/biA4_restarts" beforeDir="false" afterPath="$PROJECT_DIR$/stash/biA4_restarts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigramTransposeResult" beforeDir="false" afterPath="$PROJECT_DIR$/stash/bigramTransposeResult" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bigram_408_viterbi_mdir_smoothed" beforeDir="false" afterPath="$PROJECT_DIR$/stash/bigram_408_viterbi_mdir_smoothed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/birgram_408_viterbi_smoothed" beforeDir="false" afterPath="$PROJECT_DIR$/stash/birgram_408_viterbi_smoothed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/trigram.txt" beforeDir="false" afterPath="$PROJECT_DIR$/thmm/trigram.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fastTHMMNewResult" beforeDir="false" afterPath="$PROJECT_DIR$/stash/fastTHMMNewResult" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/makeBigramA_result" beforeDir="false" afterPath="$PROJECT_DIR$/stash/makeBigramA_result" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/408t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/BayesianHMM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/BayesianTriHMM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/CategoricalDistribution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/Counters.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/Decode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/DirichletDistribution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/FastTHMM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/Gibbs$Categorical.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/Gibbs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/GibbsMain.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/HMM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/HMMBlockSampler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/MDir.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/MDir_orig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/MakeCipher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/MathUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/SpeedTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/TriHMM.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/columnTransposition.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/digraph.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/makeA.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/pi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/trigramtest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/util$Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/HMM/util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out_Z408" beforeDir="false" afterPath="$PROJECT_DIR$/stash/out_Z408" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/output.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output26.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/output26.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/output2sparse.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/output2sparse.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plain.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/plain.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pointSamper_408.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/pointSamper_408.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pointSampler.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/pointSampler.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleCipher.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/simpleCipher.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/408t" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BayesianHMM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/em/map/MapHMM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/BayesianTriHMM.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CategoricalDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/CategoricalDistribution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Counters.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/Counters.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Decode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Decode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DirichletDistribution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/math/DirichletDistribution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/FastTHMM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/em/FastTHMM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Gibbs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mcmc/BayesGibbs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GibbsMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mcmc/GibbsMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HMM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/em/HMM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/HMMBlockSampler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/mcmc/HMMBlockSampler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MDir.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/em/map/MDir.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MDir_orig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/em/map/MDir_orig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MakeCipher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/MakeCipher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MathUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QuadHMM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/QuadHMM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SpeedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/SpeedTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TriHMM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/em/TriHMM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/columnTransposition.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/old/columnTransposition.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/digraph.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/digraph.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/stash/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/makeA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/old/makeA.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pi.txt" beforeDir="false" afterPath="$PROJECT_DIR$/stash/pi.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thmm/408ciphercleaned" beforeDir="false" afterPath="$PROJECT_DIR$/thmm/408ciphercleaned" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thmm/408plaincleaned" beforeDir="false" afterPath="$PROJECT_DIR$/thmm/408plaincleaned" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thmm/FastTHMM.java" beforeDir="false" afterPath="$PROJECT_DIR$/thmm/FastTHMM.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thmm/logtrigram.txt" beforeDir="false" afterPath="$PROJECT_DIR$/thmm/logtrigram.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thmm/trigram.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/trigram" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/thmm/trigramtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/thmm/trigramtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/trigramtest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/em/trigramtest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/util/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trigramTransposeResult" beforeDir="false" afterPath="$PROJECT_DIR$/stash/trigramTransposeResult" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trigram_408_viterbi_iter=200" beforeDir="false" afterPath="$PROJECT_DIR$/stash/trigram_408_viterbi_iter=200" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trigram_408_viterbi_smoothed" beforeDir="false" afterPath="$PROJECT_DIR$/stash/trigram_408_viterbi_smoothed" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trigram_simple_408" beforeDir="false" afterPath="$PROJECT_DIR$/stash/trigram_simple_408" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trihmm_cipher=408_iter=200" beforeDir="false" afterPath="$PROJECT_DIR$/stash/trihmm_cipher=408_iter=200" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trihmm_simple=300_iter=200" beforeDir="false" afterPath="$PROJECT_DIR$/stash/trihmm_simple=300_iter=200" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trihmm_simple=300_iter=50" beforeDir="false" afterPath="$PROJECT_DIR$/stash/trihmm_simple=300_iter=50" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/trihmm_simple=300_smoothed" beforeDir="false" afterPath="$PROJECT_DIR$/stash/trihmm_simple=300_smoothed" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -65,30 +146,59 @@
     <session id="1069934610">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
+          <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.3" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="8" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="12692" />
+          <entry key="dummy" value="38" />
+          <entry key="homophonic_390" value="2" />
+          <entry key="homophonic_408" value="5" />
+          <entry key="java" value="52236" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="12692" />
+          <entry key="JAVA" value="52236" />
+          <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="8" />
+          <entry key="408ciphercleaned" value="4" />
+          <entry key="408plaincleaned" value="3" />
+          <entry key="408plaintransposed" value="2" />
+          <entry key="408t" value="1" />
+          <entry key="csv" value="1" />
+          <entry key="homophonic_390" value="1" />
+          <entry key="homophonic_408" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="ipynb" value="1" />
+          <entry key="java" value="111" />
+          <entry key="out_Z408" value="2" />
+          <entry key="py" value="1" />
+          <entry key="quadgram" value="1" />
+          <entry key="simple_408" value="1" />
+          <entry key="simple_cipher_length=300" value="1" />
           <entry key="simple_cipher_length=500" value="1" />
+          <entry key="trigram" value="1" />
+          <entry key="txt" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="8" />
-          <entry key="PLAIN_TEXT" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="111" />
+          <entry key="PLAIN_TEXT" value="27" />
         </counts>
       </usages-collector>
     </session>
@@ -96,28 +206,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/simple_cipher/simple_cipher_length=500">
-          <provider selected="true" editor-type-id="text-editor" />
+        <entry file="file://$PROJECT_DIR$/src/em/QuadGibbsEstimator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-195">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/HMMBlockSampler.java">
+        <entry file="file://$PROJECT_DIR$/src/math/Math.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="336" selection-start-line="336" selection-end-line="336" />
+            <state relative-caret-position="120">
+              <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1537961441399" expanded="true" signature="11571:12017" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/QuadHMM.java">
+        <entry file="file://$PROJECT_DIR$/src/em/EMExpectationTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
+            <state relative-caret-position="270">
+              <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -126,10 +242,27 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/FastTHMM.java">
+        <entry file="file://$PROJECT_DIR$/data/408plaincleaned">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QuadHMM.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3601">
-              <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            <state relative-caret-position="396">
+              <caret line="358" column="39" selection-start-line="358" selection-start-column="39" selection-end-line="358" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/em/EM.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="435">
+              <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,57 +297,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/MakeCipher.java" />
-        <option value="$PROJECT_DIR$/bfgs_proposals/proposals/_beta=1_iter=200_seed=4686483" />
-        <option value="$PROJECT_DIR$/src/MathUtils.java" />
-        <option value="$PROJECT_DIR$/src/Gibbs.java" />
-        <option value="$PROJECT_DIR$/trihmm_simple=300_iter=50" />
-        <option value="$PROJECT_DIR$/temp" />
-        <option value="$PROJECT_DIR$/trihmm_cipher=408_iter=200" />
-        <option value="$PROJECT_DIR$/trihmm_simple=300_iter=200" />
-        <option value="$PROJECT_DIR$/data/408plaincleaned" />
-        <option value="$PROJECT_DIR$/data/408ciphercleaned" />
-        <option value="$PROJECT_DIR$/src/GibbsMain.java" />
-        <option value="$PROJECT_DIR$/src/Decode.java" />
-        <option value="$PROJECT_DIR$/trigram_408_viterbi_iter=200" />
-        <option value="$PROJECT_DIR$/bigram_408_viterbi_smoothed" />
-        <option value="$PROJECT_DIR$/trihmm_cipher=300_smoothed" />
-        <option value="$PROJECT_DIR$/trigram_408_viterbi_smoothed" />
-        <option value="$PROJECT_DIR$/src/HMM.java" />
-        <option value="$PROJECT_DIR$/birgram_408_viterbi_smoothed" />
-        <option value="$PROJECT_DIR$/simple_cipher/simple_408" />
-        <option value="$PROJECT_DIR$/data/408plaintransposed" />
-        <option value="$PROJECT_DIR$/data/triA2" />
-        <option value="$PROJECT_DIR$/trigram_simple_408" />
-        <option value="$PROJECT_DIR$/makeBigramA_result" />
-        <option value="$PROJECT_DIR$/biA2_restarts" />
-        <option value="$PROJECT_DIR$/data/biA2" />
-        <option value="$PROJECT_DIR$/data/biA3" />
-        <option value="$PROJECT_DIR$/src/makeA.java" />
-        <option value="$PROJECT_DIR$/data/biA4" />
-        <option value="$PROJECT_DIR$/src/columnTransposition.java" />
-        <option value="$PROJECT_DIR$/trigramTransposeResult" />
-        <option value="$PROJECT_DIR$/src/BayesianHMM.java" />
-        <option value="$PROJECT_DIR$/src/main.java" />
-        <option value="$PROJECT_DIR$/bigramTransposeResult" />
-        <option value="$PROJECT_DIR$/B_1236" />
-        <option value="$PROJECT_DIR$/src/TriHMM.java" />
-        <option value="$PROJECT_DIR$/fastTHMMNewResult" />
-        <option value="$PROJECT_DIR$/src/utilNoSpace.java" />
-        <option value="$PROJECT_DIR$/src/hmmWithSpacedCharacter/utilNoSpace.java" />
-        <option value="$PROJECT_DIR$/src/hmmWithSpacedCharacter/THMM.java" />
-        <option value="$PROJECT_DIR$/src/hmmWithSpacedCharacter/utilSpace.java" />
-        <option value="$PROJECT_DIR$/src/hmmWithSpacedCharacter/SpaceTHMM.java" />
-        <option value="$PROJECT_DIR$/src/HMMBlockSsampler.java" />
-        <option value="$PROJECT_DIR$/src/Counters.java" />
         <option value="$PROJECT_DIR$/src/CategoricalDistribution.java" />
         <option value="$PROJECT_DIR$/src/DirichletDistribution.java" />
-        <option value="$PROJECT_DIR$/src/util.java" />
-        <option value="$PROJECT_DIR$/src/HMMBlockSampler.java" />
         <option value="$PROJECT_DIR$/src/FastTHMM.java" />
         <option value="$PROJECT_DIR$/src/trigramtest.java" />
         <option value="$PROJECT_DIR$/src/SpeedTest.java" />
+        <option value="$PROJECT_DIR$/src/MyMath.java" />
+        <option value="$PROJECT_DIR$/src/QuadHMMlog.java" />
+        <option value="$PROJECT_DIR$/src/HMMBlockSampler.java" />
+        <option value="$PROJECT_DIR$/src/MAP/MDir_orig.java" />
+        <option value="$PROJECT_DIR$/src/Gibbs/Gibbs.java" />
+        <option value="$PROJECT_DIR$/src/util.java" />
+        <option value="$PROJECT_DIR$/src/Process.java" />
+        <option value="$PROJECT_DIR$/src/Helper.java" />
+        <option value="$PROJECT_DIR$/src/Gibbs/GibbsMain.java" />
+        <option value="$PROJECT_DIR$/src/TriGramEM/FastTHMM.java" />
+        <option value="$PROJECT_DIR$/src/trigram/FastTHMM.java" />
+        <option value="$PROJECT_DIR$/src/em/map/BayesianHMM.java" />
+        <option value="$PROJECT_DIR$/src/em/map/MapHMM.java" />
+        <option value="$PROJECT_DIR$/src/em/trigramtest.java" />
+        <option value="$PROJECT_DIR$/src/util/MyMath.java" />
+        <option value="$PROJECT_DIR$/src/util/Math.java" />
+        <option value="$PROJECT_DIR$/src/util/Decode.java" />
+        <option value="$PROJECT_DIR$/src/HMM.java" />
+        <option value="$PROJECT_DIR$/src/util/SpeedTest.java" />
+        <option value="$PROJECT_DIR$/src/em/TriHMM.java" />
+        <option value="$PROJECT_DIR$/src/makeA.java" />
+        <option value="$PROJECT_DIR$/src/Gibbs/HMMBlockSampler.java" />
+        <option value="$PROJECT_DIR$/src/em/FastTHMM.java" />
+        <option value="$PROJECT_DIR$/src/mcmc/Gibbs.java" />
+        <option value="$PROJECT_DIR$/src/mcmc/BayesGibbs.java" />
+        <option value="$PROJECT_DIR$/src/mcmc/ExpectationComparison.java" />
+        <option value="$PROJECT_DIR$/src/em/SamplingMethod.java" />
+        <option value="$PROJECT_DIR$/src/util/MatrixHelper.java" />
+        <option value="$PROJECT_DIR$/src/util/Pair.java" />
+        <option value="$PROJECT_DIR$/src/mcmc/HMMBlockSampler.java" />
+        <option value="$PROJECT_DIR$/src/EM.java" />
+        <option value="$PROJECT_DIR$/src/em/Settings.java" />
+        <option value="$PROJECT_DIR$/src/em/BlockSampler.java" />
+        <option value="$PROJECT_DIR$/src/em/GibbsSampler.java" />
+        <option value="$PROJECT_DIR$/src/em/ForwardBackward.java" />
+        <option value="$PROJECT_DIR$/src/em/EM.java" />
+        <option value="$PROJECT_DIR$/src/em/ExpectationEstimator.java" />
+        <option value="$PROJECT_DIR$/src/em/BlockEstimator.java" />
+        <option value="$PROJECT_DIR$/src/em/ForwardBackwardEstimator.java" />
+        <option value="$PROJECT_DIR$/src/em/GibbsEstimator.java" />
+        <option value="$PROJECT_DIR$/src/math/Math.java" />
         <option value="$PROJECT_DIR$/src/QuadHMM.java" />
+        <option value="$PROJECT_DIR$/src/util/Helper.java" />
+        <option value="$PROJECT_DIR$/src/em/QuadGibbsEstimator.java" />
+        <option value="$PROJECT_DIR$/data/homophonic_390" />
+        <option value="$PROJECT_DIR$/src/em/EMExpectationTest.java" />
       </list>
     </option>
   </component>
@@ -230,18 +363,18 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1" />
-    <option name="width" value="684" />
-    <option name="height" value="768" />
+    <option name="width" value="1922" />
+    <option name="height" value="1080" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,7 +385,7 @@
             <path>
               <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
               <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
-              <item name="simple_cipher" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
@@ -263,7 +396,24 @@
               <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
               <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="hmmWithSpacedCharacter" type="462c0819:PsiDirectoryNode" />
+              <item name="em" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="math" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiddenMarkovModel" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiddenMarkovModel" type="462c0819:PsiDirectoryNode" />
+              <item name="stash" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -275,7 +425,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/khiempham.github.io" />
     <property name="project.structure.last.edited" value="Global Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -284,10 +434,10 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/src/thmm" />
+      <recent name="$PROJECT_DIR$/stash" />
+      <recent name="$PROJECT_DIR$/src/old" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/simple_cipher" />
+      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
@@ -308,7 +458,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.EMExpectationTest">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -601,8 +751,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CategoricalDistribution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="CategoricalDistribution" />
+    <configuration name="EMExpectationTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="em.EMExpectationTest" />
+      <module name="HMM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExpectationComparison" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="mcmc.ExpectationComparison" />
+      <module name="HMM" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FastTHMM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="em.FastTHMM" />
       <module name="HMM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -610,7 +776,7 @@
       </method>
     </configuration>
     <configuration name="HMMBlockSampler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HMMBlockSampler" />
+      <option name="MAIN_CLASS_NAME" value="mcmc.HMMBlockSampler" />
       <module name="HMM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
@@ -625,23 +791,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpaceTHMM" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hmmWithSpacedCharacter.SpaceTHMM" />
-      <module name="HMM" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="utilSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="hmmWithSpacedCharacter.utilSpace" />
-      <module name="HMM" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -682,19 +832,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.utilSpace" />
-      <item itemvalue="Application.SpaceTHMM" />
-      <item itemvalue="Application.QuadHMM" />
-      <item itemvalue="Application.CategoricalDistribution" />
       <item itemvalue="Application.HMMBlockSampler" />
+      <item itemvalue="Application.ExpectationComparison" />
+      <item itemvalue="Application.FastTHMM" />
+      <item itemvalue="Application.EMExpectationTest" />
+      <item itemvalue="Application.QuadHMM" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EMExpectationTest" />
         <item itemvalue="Application.QuadHMM" />
+        <item itemvalue="Application.ExpectationComparison" />
+        <item itemvalue="Application.FastTHMM" />
         <item itemvalue="Application.HMMBlockSampler" />
-        <item itemvalue="Application.CategoricalDistribution" />
-        <item itemvalue="Application.SpaceTHMM" />
-        <item itemvalue="Application.utilSpace" />
       </list>
     </recent_temporary>
   </component>
@@ -704,10 +854,9 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="768" extended-state="6" />
-    <editor active="true" />
+    <frame x="-1" y="0" width="1922" height="1080" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27424243" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19903949" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="3" />
@@ -715,12 +864,12 @@
       <window_info id="Favorites" order="5" side_tool="true" />
       <window_info id="Image Layers" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32817337" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32706374" />
       <window_info anchor="bottom" id="Debug" order="2" weight="0.32507738" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="5" />
-      <window_info anchor="bottom" id="Messages" order="6" weight="0.3255814" />
+      <window_info anchor="bottom" id="Messages" order="6" weight="0.32392895" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32929516" />
       <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32929516" />
@@ -733,7 +882,7 @@
       <window_info anchor="right" id="Ant Build" order="6" weight="0.2497332" />
       <window_info anchor="right" id="Maven Projects" order="7" weight="0.19903949" />
       <window_info anchor="right" id="Database" order="8" />
-      <window_info active="true" anchor="right" id="Run" order="9" visible="true" weight="0.19772728" />
+      <window_info anchor="right" id="Run" order="9" weight="0.33831376" />
     </layout>
     <layout-to-restore>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20117396" />
@@ -775,14 +924,14 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/BayesianHMM.java</url>
+          <url>file://$PROJECT_DIR$/src/em/map/MapHMM.java</url>
           <line>134</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/HMM.java</url>
-          <line>183</line>
+          <url>file://$PROJECT_DIR$/src/em/HMM.java</url>
+          <line>187</line>
           <properties />
           <option name="timeStamp" value="34" />
         </line-breakpoint>
@@ -797,76 +946,193 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/trigram_simple_408" />
-    <entry file="file://$PROJECT_DIR$/src/MDir.java">
+    <entry file="file://$PROJECT_DIR$/src/408t" />
+    <entry file="file://$PROJECT_DIR$/src/em/map/MDir.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1305">
-          <caret line="43" column="20" lean-forward="true" selection-start-line="43" selection-start-column="20" selection-end-line="43" selection-end-column="20" />
+        <state relative-caret-position="165">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trihmm_simple=300_iter=200" />
-    <entry file="file://$PROJECT_DIR$/trigram_408_viterbi_iter=200" />
-    <entry file="file://$PROJECT_DIR$/trihmm_cipher=408_iter=200" />
-    <entry file="file://$PROJECT_DIR$/makeBigramA_result" />
-    <entry file="file://$PROJECT_DIR$/data/triA2_restarts" />
-    <entry file="file://$PROJECT_DIR$/plain.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/biA2" />
-    <entry file="file://$PROJECT_DIR$/data/biA3" />
-    <entry file="file://$PROJECT_DIR$/biA3_restarts" />
-    <entry file="file://$PROJECT_DIR$/data/408plaintransposed" />
-    <entry file="file://$PROJECT_DIR$/data/biA4" />
-    <entry file="file://$PROJECT_DIR$/biA4_restarts" />
-    <entry file="file://$PROJECT_DIR$/src/columnTransposition.java" />
-    <entry file="file://$PROJECT_DIR$/birgram_408_viterbi_smoothed" />
-    <entry file="file://$PROJECT_DIR$/bigram_408_viterbi_mdir_smoothed" />
-    <entry file="file://$PROJECT_DIR$/bigramTransposeResult" />
-    <entry file="file://$PROJECT_DIR$/trigram_408_viterbi_smoothed" />
-    <entry file="file://$PROJECT_DIR$/src/BayesianHMM.java">
+    <entry file="file://$PROJECT_DIR$/src/em/map/MDir_orig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5340">
-          <caret line="267" column="27" selection-start-line="267" selection-start-column="27" selection-end-line="267" selection-end-column="27" />
+        <state relative-caret-position="-15">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/trigramTransposeResult" />
-    <entry file="file://$PROJECT_DIR$/out_Z408" />
-    <entry file="file://$PROJECT_DIR$/data/logtrigram.txt" />
-    <entry file="file://$PROJECT_DIR$/data/trigram.txt" />
-    <entry file="jar://$USER_HOME$/Software/commons-math3-3.6.1/commons-math3-3.6.1.jar!/org/apache/commons/math3/util/FastMath.class" />
-    <entry file="file://$PROJECT_DIR$/src/Decode.java" />
-    <entry file="file://$PROJECT_DIR$/B_1236" />
-    <entry file="file://$PROJECT_DIR$/fastTHMMNewResult" />
-    <entry file="file://$PROJECT_DIR$/data/408plaincleaned" />
-    <entry file="file://$PROJECT_DIR$/simple_cipher/simple_408">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/biA2_restarts">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.java">
+    <entry file="file://$PROJECT_DIR$/src/em/map/MapHMM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4425">
-          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+        <state relative-caret-position="225">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/makeA.java">
+    <entry file="file://$PROJECT_DIR$/src/em/trigramtest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-177">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Decode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/em/HMM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/em/TriHMM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="10" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/SpeedTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="455">
+          <caret line="90" column="40" selection-start-line="90" selection-start-column="40" selection-end-line="90" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/MakeCipher.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Counters.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old/makeA.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stash/digraph.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/old/columnTransposition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stash/main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2790">
+          <caret line="195" column="30" selection-start-line="195" selection-start-column="30" selection-end-line="195" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mcmc/GibbsMain.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
-          <caret line="8" column="76" selection-start-line="8" selection-start-column="76" selection-end-line="8" selection-end-column="76" />
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/408ciphercleaned">
+    <entry file="file://$PROJECT_DIR$/src/math/DirichletDistribution.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/trigram">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/brown_nolines.txt">
+    <entry file="file://$PROJECT_DIR$/src/mcmc/BayesGibbs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="50" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        <state relative-caret-position="105">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mcmc/NonBayesGibbs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="26" selection-start-line="2" selection-start-column="26" selection-end-line="2" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/em/SamplingMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="28" selection-start-line="2" selection-start-column="28" selection-end-line="2" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mcmc/ExpectationComparison.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/MatrixHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/em/Settings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/mcmc/HMMBlockSampler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-75">
+          <caret line="402" selection-start-line="402" selection-end-line="402" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="docComment;method#forward#0;class#HMMBlockSampler#0" />
+            <element signature="method#forwardBackward#0;class#HMMBlockSampler#0" />
+            <element signature="method#emissionSampling#0;class#HMMBlockSampler#0" />
+            <element signature="method#sanityCheck#0;class#HMMBlockSampler#0" />
+            <element signature="method#init#0;class#HMMBlockSampler#0" />
+            <element signature="method#viterbi#0;class#HMMBlockSampler#0" />
+            <marker date="1540520313957" expanded="true" signature="17824:18268" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -877,128 +1143,156 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/BayesianTriHMM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2406">
-          <caret line="110" column="12" selection-start-line="110" selection-start-column="12" selection-end-line="110" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DirichletDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="43" lean-forward="true" selection-start-line="43" selection-end-line="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/CategoricalDistribution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Counters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="47" column="19" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#755#756#0" expanded="true" />
-            <element signature="e#799#800#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hmmWithSpacedCharacter/utilSpace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="28" column="33" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="348" column="18" selection-start-line="348" selection-start-column="18" selection-end-line="348" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/hmmWithSpacedCharacter/SpaceTHMM.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="336" selection-start-line="336" selection-end-line="336" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/simple_cipher/simple_cipher_length=500">
+    <entry file="file://$PROJECT_DIR$/data/408plaintransposed">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TriHMM.java">
+    <entry file="file://$PROJECT_DIR$/src/em/BlockEstimator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="255">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HMM.java">
+    <entry file="file://$PROJECT_DIR$/src/em/ForwardBackwardEstimator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1035">
-          <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="186" selection-end-column="20" />
+        <state relative-caret-position="210">
+          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/trigramtest.java">
+    <entry file="file://$PROJECT_DIR$/src/em/ExpectationEstimator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="127">
-          <caret line="132" column="31" selection-start-line="132" selection-start-column="31" selection-end-line="132" selection-end-column="31" />
+        <state relative-caret-position="320">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SpeedTest.java">
+    <entry file="file://$PROJECT_DIR$/src/math/CategoricalDistribution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="14" column="32" selection-start-line="14" selection-start-column="32" selection-end-line="14" selection-end-column="32" />
+        <state relative-caret-position="150">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/FastTHMM.java">
+    <entry file="file://$PROJECT_DIR$/src/em/FastTHMM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3601">
-          <caret line="62" column="30" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        <state relative-caret-position="885">
+          <caret line="89" column="4" selection-start-line="89" selection-start-column="4" selection-end-line="89" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/HMMBlockSampler.java">
+    <entry file="file://$PROJECT_DIR$/src/em/GibbsEstimator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="336" selection-start-line="336" selection-end-line="336" />
+        <state relative-caret-position="200">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1537961441399" expanded="true" signature="11571:12017" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/quadgram">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngram/Untitled.ipynb">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngram/process.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ngram/ngrams3.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/util/Helper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="352" column="38" selection-start-line="352" selection-start-column="38" selection-end-line="352" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/em/EM.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="53" column="18" selection-start-line="53" selection-start-column="18" selection-end-line="53" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QuadHMM.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="182" column="20" selection-start-line="182" selection-start-column="20" selection-end-line="182" selection-end-column="20" />
+        <state relative-caret-position="396">
+          <caret line="358" column="39" selection-start-line="358" selection-start-column="39" selection-end-line="358" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/simple_cipher/simple_408">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stash/out_Z408">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2385" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stash/Z408.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/408ciphercleaned">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/math/Math.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/homophonic_408">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/homophonic_390">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/408plaincleaned">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/em/QuadGibbsEstimator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-195">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/em/EMExpectationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="40" selection-start-line="18" selection-start-column="40" selection-end-line="18" selection-end-column="40" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
